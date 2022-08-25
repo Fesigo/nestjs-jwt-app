@@ -15,7 +15,7 @@ export class CreateUserDto {
 
   @IsNotEmpty()
   @Matches(RegExHelper.password, {
-    message: MessagesHelper.PASSWORD_VALID,
+    message: MessagesHelper.VALID_PASSWORD,
   })
   password: string;
 }
